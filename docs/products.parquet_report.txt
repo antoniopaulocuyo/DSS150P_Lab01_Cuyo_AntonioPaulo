@@ -1,0 +1,30 @@
+products.parquet Profile Report 
+Path: /Users/paulocuyo/Documents/DSS150P_Lab01_Cuyo_AntonioPaulo/data/raw/products.parquet 
+File type: .parquet 
+File Size (bytes): 14652 
+Number of rows: 200 
+Number of columns: 7 
+Columns with data types: {'product_id': 'str', 'product_name': 'str', 'category': 'str', 'brand': 'str', 'unit_price': 'float64', 'stock_quantity': 'int32', 'weight_kg': 'float64'}
+Number of nulls: 
+product_id        0
+product_name      0
+category          0
+brand             0
+unit_price        0
+stock_quantity    0
+weight_kg         0
+dtype: int64 
+Number of duplicate rows: 0 
+
+unit_price (float64) values
+Minimum value: 392.85 
+Maximum value: 84796.84 
+
+stock_quantity (int32) values
+Minimum value: 0 
+Maximum value: 250 
+
+weight_kg (float64) values
+Minimum value: 0.114 
+Maximum value: 7.989 
+

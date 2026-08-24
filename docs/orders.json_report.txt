@@ -1,0 +1,39 @@
+orders.json Profile Report 
+Path: /Users/paulocuyo/Documents/DSS150P_Lab01_Cuyo_AntonioPaulo/data/raw/orders.json 
+File type: .json 
+File Size (bytes): 77938 
+Number of rows: 250 
+Number of columns: 9 
+Columns with data types: {'order_id': 'str', 'customer_id': 'str', 'order_timestamp': 'str', 'status': 'str', 'item_count': 'int64', 'subtotal': 'float64', 'shipping_fee': 'int64', 'total_amount': 'float64', 'shipping': 'object'}
+Number of nulls: 
+order_id           0
+customer_id        0
+order_timestamp    0
+status             0
+item_count         0
+subtotal           0
+shipping_fee       0
+total_amount       0
+shipping           0
+dtype: int64 
+Number of duplicate rows: N/A - unhashable/nested values 
+
+item_count (int64) values
+Minimum value: 1 
+Maximum value: 8 
+
+subtotal (float64) values
+Minimum value: 214.4 
+Maximum value: 11997.73 
+
+shipping_fee (int64) values
+Minimum value: 0 
+Maximum value: 149 
+
+total_amount (float64) values
+Minimum value: 214.4 
+Maximum value: 12096.73 
+
+order_timestamp (str) values
+Minimum value: 2026-01-02 03:00:00 
+Maximum value: 2026-06-30 07:38:00 

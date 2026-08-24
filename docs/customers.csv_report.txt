@@ -1,0 +1,21 @@
+customers.csv Profile Report 
+Path: /Users/paulocuyo/Documents/DSS150P_Lab01_Cuyo_AntonioPaulo/data/raw/customers.csv 
+File type: .csv 
+File Size (bytes): 18183 
+Number of rows: 250 
+Number of columns: 7 
+Columns with data types: {'customer_id': 'str', 'first_name': 'str', 'last_name': 'str', 'email': 'str', 'city': 'str', 'signup_date': 'str', 'customer_segment': 'str'}
+Number of nulls: 
+customer_id         0
+first_name          0
+last_name           0
+email               3
+city                2
+signup_date         0
+customer_segment    0
+dtype: int64 
+Number of duplicate rows: 2 
+
+signup_date (str) values
+Minimum value: 2025-01-04 00:00:00 
+Maximum value: 2026-05-16 00:00:00 
