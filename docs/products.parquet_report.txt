@@ -15,6 +15,13 @@ stock_quantity    0
 weight_kg         0
 dtype: int64 
 Number of duplicate rows: 0 
+First Five: 
+  product_id         product_name category    brand  unit_price  stock_quantity  weight_kg
+0      P0001  Pioneer Storage 001  Storage  Pioneer    60431.61              61      0.215
+1      P0002   Nimbus Monitor 002  Monitor   Nimbus    74094.63             239      4.407
+2      P0003    Aster Storage 003  Storage    Aster    34830.50              53      6.358
+3      P0004     Vertex Phone 004    Phone   Vertex    20008.31              27      6.199
+4      P0005    Orion Storage 005  Storage    Orion    76614.51             109      5.168
 
 unit_price (float64) values
 Minimum value: 392.85 

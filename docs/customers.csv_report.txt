@@ -15,6 +15,13 @@ signup_date         0
 customer_segment    0
 dtype: int64 
 Number of duplicate rows: 2 
+First Five: 
+  customer_id first_name   last_name                         email         city signup_date customer_segment
+0       C0001      Kevin    Bautista    kevin.bautista@example.com        Pasig  2025-04-27     Professional
+1       C0002      Paolo     Mendoza     paolo.mendoza@example.com       Makati  2025-08-04           Retail
+2       C0003      Julia       Ramos       julia.ramos@example.com       Taguig  2026-01-15              SME
+3       C0004      Marco       Reyes       marco.reyes@example.com       Makati  2026-02-21          Student
+4       C0005      Paolo  Villanueva  paolo.villanueva@example.com  Quezon City  2025-12-15     Professional
 
 signup_date (str) values
 Minimum value: 2025-01-04 00:00:00 

@@ -59,7 +59,8 @@ for file in RAW.iterdir():
                     f"Number of columns: {num_cols} \n"
                     f"Columns with data types: {columns}\n"
                     f"Number of nulls: \n{num_nulls} \n"
-                    f"Number of duplicate rows: {num_duplicates} \n\n")
+                    f"Number of duplicate rows: {num_duplicates} \n"
+                    f"First Five: \n{df.head()}\n\n")
 
             for col in numeric_cols:
                     new_file.write(f"{col} ({columns[col]}) values\n"

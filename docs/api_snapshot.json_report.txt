@@ -1,0 +1,30 @@
+api_snapshot.json Profile Report 
+Path: /Users/paulocuyo/Documents/DSS150P_Lab01_Cuyo_AntonioPaulo/data/raw/api_snapshot.json 
+File type: .json 
+File Size (bytes): 27520 
+Number of rows: 100 
+Number of columns: 4 
+Columns with data types: {'userId': 'int64', 'id': 'int64', 'title': 'str', 'body': 'str'}
+Number of nulls: 
+userId    0
+id        0
+title     0
+body      0
+dtype: int64 
+Number of duplicate rows: 0 
+First Five: 
+   userId  id                                              title                                               body
+0       1   1  sunt aut facere repellat provident occaecati e...  quia et suscipit\nsuscipit recusandae consequu...
+1       1   2                                       qui est esse  est rerum tempore vitae\nsequi sint nihil repr...
+2       1   3  ea molestias quasi exercitationem repellat qui...  et iusto sed quo iure\nvoluptatem occaecati om...
+3       1   4                               eum et est occaecati  ullam et saepe reiciendis voluptatem adipisci\...
+4       1   5                                 nesciunt quas odio  repudiandae veniam quaerat sunt sed\nalias aut...
+
+userId (int64) values
+Minimum value: 1 
+Maximum value: 10 
+
+id (int64) values
+Minimum value: 1 
+Maximum value: 100 
+

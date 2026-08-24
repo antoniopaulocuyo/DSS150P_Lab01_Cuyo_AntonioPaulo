@@ -17,6 +17,13 @@ total_amount       0
 shipping           0
 dtype: int64 
 Number of duplicate rows: N/A - unhashable/nested values 
+First Five: 
+  order_id customer_id     order_timestamp     status  item_count  subtotal  shipping_fee  total_amount                                        shipping
+0   O00001       C0230 2026-06-27 03:27:00     Packed           7   5390.60            49       5439.60  {'region': 'Region VII', 'method': 'Standard'}
+1   O00002       C0066 2026-04-29 13:39:00     Packed           2  11094.85            99      11193.85     {'region': 'Region XI', 'method': 'Pickup'}
+2   O00003       C0202 2026-03-08 13:00:00  Delivered           2   1200.21             0       1200.21   {'region': 'Region IV-A', 'method': 'Pickup'}
+3   O00004       C0063 2026-01-14 09:20:00  Cancelled           6   6217.54             0       6217.54  {'region': 'Region III', 'method': 'Standard'}
+4   O00005       C0163 2026-05-21 21:18:00    Pending           5   9866.01            99       9965.01  {'region': 'Region VII', 'method': 'Standard'}
 
 item_count (int64) values
 Minimum value: 1 
