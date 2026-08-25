@@ -48,7 +48,7 @@
 - **Expected update pattern:** Unknown (Likely real-time or on-demand)
 - **Likely acquisition method:** HTTP GET request via `requests`
 - **Schema location or schema owner:** [GitHub Owner] jrnmapanao@yahoo.com
-- **Possible primary/business key:** 
+- **Possible primary/business key:** row-id
 - **Potential schema-evolution risk:** APIs can change response structure.
 - **Potential data-quality risk:** Network/timeout failures, rate limiting, or partial responses could result in incomplete or missing data compared to a stable file-based source.
 
@@ -61,6 +61,6 @@
 - **Expected update pattern:** Unknown (Likely ongoing updates)
 - **Likely acquisition method:** SQL query via `psycopg2`
 - **Schema location or schema owner:** Defined in the database itself (`information_schema.columns`). Owned by [GitHub Owner] jrnmapanao@yahoo.com
-- **Possible primary/business key:**
+- **Possible primary/business key:** row-id
 - **Potential schema-evolution risk:** Lower risk day-to-day since the schema is explicitly defined in the database.
 - **Potential data-quality risk:** Since data can be updated live (unlike a static file snapshot), values queried at different times may be inconsistent for comparison/testing.
