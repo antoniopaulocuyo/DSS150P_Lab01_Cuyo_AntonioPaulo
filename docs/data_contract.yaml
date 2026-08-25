@@ -1,0 +1,62 @@
+# Source: customers.csv
+# Rationale: customers.csv is fully structured and simple to type.
+# However, customer_id has 3 duplicate values across 250 rows so it cannot be enforced as a
+# unique primary key without further cleanup.
+
+dataset_name: customers
+version: 1.0
+owner: jrnmapanao@yahoo.com
+source_type: file
+source_format: csv
+acquisition_method: "File drop into data/raw/)"
+expected_update_pattern: "unknown"
+primary_key: null
+
+schema:
+  - name: customer_id
+    type: string
+    nullable: false
+    description: "Business key candidate identifying a customer. Not unique in source data"
+  - name: first_name
+    type: string
+    nullable: false
+    description: "Customer's given name"
+  - name: last_name
+    type: string
+    nullable: false
+    description: "Customer's family name"
+  - name: email
+    type: string
+    nullable: true
+    description: "Customer's contact email address; missing for some records"
+  - name: city
+    type: string
+    nullable: true
+    description: "Customer's city of residence; missing for some records"
+  - name: signup_date
+    type: date
+    nullable: false
+    description: "Date the customer signed up; stored as a string in the source file and requires parsing"
+  - name: customer_segment
+    type: string
+    nullable: false
+    description: "Customer segment classification. Known set of values."
+
+quality_rules:
+  - "customer_id must not be null"
+  - "customer_id is expected to be unique per customer, but the source currently contains 3 duplicate values out of 250 rows and must be flagged, not silently accepted, until resolved"
+  - "customer_segment must be one of: Professional, Retail, SME, Student"
+  - "signup_date must be a valid, parseable date"
+  - "email and city may be null, but a null rate significantly above the observed baseline (3/250 and 2/250 respectively) should be flagged as a potential upstream issue"
+
+freshness_expectation: "unknown"
+duplicate_policy: quarantine
+schema_evolution_policy: "If a new column is added, ingestion should continue and log the new column for review rather than failing. If an existing column is removed or renamed, ingestion should fail loudly rather than silently dropping or misaligning data."
+consumer: "Downstream analyst or reporting system building customer-level views"
+notes: >
+  customer_id is not unique in the source (3 duplicate values found during profiling).A surrogate
+  key (row_id) is used in the deployed schema instead. The root cause of the
+  duplicates (data-entry error vs. legitimate re-registration) has not been
+  confirmed with the source owner. signup_date is stored as plain text in the
+  source and must be explicitly parsed/validated on ingestion, since its format
+  is not enforced by the source system itself.
