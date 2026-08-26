@@ -12,7 +12,7 @@ database schema and data contract.
 
 ## Software Requirements
 
-- Python 3.14 (or the version specified in `.python-version`, if present)
+- Python 3.14
 - pandas
 - pyarrow
 - requests
